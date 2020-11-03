@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"net/http"
 	"os"
-	"log"
-	"time"
 	"sync"
+	"time"
+
 	"github.com/gorilla/mux"
 )
 
@@ -20,11 +21,13 @@ var HOST = os.Getenv("HOST")
 
 func init() {
 	if PORT == "" {
-		log.Fatalln("\nError: Env variable $PORT not set!")
+		PORT = "3000"
+		// log.Fatalln("\nError: Env variable $PORT not set!")
 	}
 
 	if HOST == "" {
-		log.Fatalln("\nError: Env variable $HOST not set!")
+		HOST = "localhost"
+		// log.Fatalln("\nError: Env variable $HOST not set!")
 	}
 }
 
