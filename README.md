@@ -24,11 +24,16 @@ Short URLs are often detrimental to user privacy in that they do click tracking 
 4. Start the bot server on your VPS/any machine like this `./tg-bot`
 5. Open Telegram and test if the server is responding to your messages as expected.
 
+## Docker
+
+The `Dockerfile` contains instructions for this program to be run as an alpine container (statically compiled binary from Go). The net image size is 13 MiB.
+
+Use the `./run-dockerized.sh` command to build the program, create, and run the docker container automatically.
+
 ## Credits
 
 1. URL expansion code used from https://github.com/eldadru/url-expander (thanks @eldadru)
 2. http server code used from https://github.com/ishanjain28/url-shortner (thanks @ishanjain28)
-
 
 ## License
 
