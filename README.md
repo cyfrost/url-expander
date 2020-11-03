@@ -28,7 +28,7 @@ Short URLs are often detrimental to user privacy in that they do click tracking 
 
 The `Dockerfile` contains instructions for this program to be run as an alpine container (statically compiled binary from Go). The net image size is 13 MiB.
 
-Use the `./run-dockerized.sh` command to build the program, create, and run the docker container automatically.
+Start the docker container using `./run-dockerized.sh` command and open the browser to URL http://localhost:5000 to see the program output.
 
 ## Credits
 
